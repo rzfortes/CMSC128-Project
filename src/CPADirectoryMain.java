@@ -41,6 +41,7 @@ public class CPADirectoryMain extends Application {
         mainLayout.setPrefSize(400, 400);
         // Set the Style-properties of the BorderPane
         //TODO: study CSS to design the page easier
+        //trying to push
         mainLayout.setStyle("-fx-padding: 10;" +
                 "-fx-border-style: solid inside;" +
                 "-fx-border-width: 2;" +
