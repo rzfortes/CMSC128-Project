@@ -46,7 +46,8 @@ public class CPADirectoryMain extends Application {
                 "-fx-border-width: 2;" +
                 "-fx-border-insets: 5;" +
                 "-fx-border-radius: 5;" +
-                "-fx-border-color: blue;");
+                "-fx-border-color: white;"+
+                "-fx-background-color: #6495ED");
 
         Scene mainContent = new Scene(mainLayout, 1024, 768);
         mainWindow.setScene(mainContent);
