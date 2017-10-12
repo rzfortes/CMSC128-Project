@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <SplitPane dividerPositions="0.7344559585492227" layoutY="-4.0" orientation="VERTICAL" prefHeight="774.0" prefWidth="1024.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="568.0" prefWidth="1022.0" style="-fx-background-color: #6495ED;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="154.0" prefWidth="1022.0">
+                    <children>
+                        <GridPane layoutX="101.0" layoutY="-2.0" prefHeight="218.0" prefWidth="1022.0" style="-fx-background-color: #6495ED;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                            <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="262.0" text="Ferry Terminal" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Toilets" textAlignment="CENTER" GridPane.columnIndex="4">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Firearm Deposit Area" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Kid's Corner" textAlignment="CENTER" GridPane.columnIndex="3">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="276.0" text="Canteen" textAlignment="CENTER" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" text="Waiting Area" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Inspection Area" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Pre-Departure" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="271.0" text="Human Trafficking Office" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" text="Holding Area" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Breastfeeding Station" textAlignment="CENTER" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Clinic" textAlignment="CENTER" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Baggage Counters" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Entrance" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Arial" size="17.0" />
+                                    </font>
+                                </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Prayer Room" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" text="Coffee Shop" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Massage Area" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="260.0" text="Fire Exits" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Arial" size="17.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</Pane>
