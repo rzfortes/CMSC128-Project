@@ -5,9 +5,9 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-//For Pier1
+//For Pier3
 
-public class MainController implements Initializable {
+public class Pier3 implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println("This should be loadingg the map ...");

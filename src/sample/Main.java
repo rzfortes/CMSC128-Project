@@ -10,10 +10,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage mainWindow) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Pier1.fxml"));
         mainWindow.setTitle("CPA Passenger Assistance Directory - prototype version 0.0.0.1");
         mainWindow.setScene(new Scene(root, 1024, 768));
         mainWindow.show();
+        mainWindow.setResizable(false);
     }
 
 
