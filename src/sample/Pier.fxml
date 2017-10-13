@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -16,7 +22,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="963.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PierController">
+<AnchorPane prefHeight="963.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PierController">
     <children>
         <TabPane layoutX="30.0" layoutY="36.0" prefHeight="960.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <tabs>
@@ -65,102 +71,97 @@
                                             <children>
                                                 <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="396.0" layoutY="58.0" prefHeight="349.0" prefWidth="2558.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                     <children>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="ATM">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="150.0" text="Breastfeeding Room">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Canteen">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Clinic">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="CPA Office">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Eating Area">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Entrance">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Fire Exits">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="Paging System">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Prayer Room">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="136.0" text="Pre-departure Area">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="142.0" text="Pre-inspection Area">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Toilets">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Terminal Fee">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Waiting Area">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Gate 1">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Gate 2">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Gate 3">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
                                                         </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
-                                                            <font>
-                                                                <Font size="13.0" />
-                                                            </font>
-                                                        </Button>
-                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button">
+                                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Gate 4">
                                                             <font>
                                                                 <Font size="13.0" />
                                                             </font>
