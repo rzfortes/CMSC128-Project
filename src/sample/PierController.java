@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -37,11 +38,16 @@ public class PierController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println("This should be loading the map ...");
-        //already placed map in an imageloader object in fxml.
+ /*       btn_gate1.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                System.out.println("Hovered");
+            }
+        });
+     Incase tooltip don't work (hover manual w/ pop-up)   : Option
+*/
     }
 
-    // tooltip
 
 
     // how event handling in buttons would look like.
@@ -53,5 +59,8 @@ public class PierController implements Initializable {
             System.out.println("You clicked " + clickedBtn.getText());
 
         }
+
     }
+
+
 }
