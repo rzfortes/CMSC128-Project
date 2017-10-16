@@ -1,21 +1,14 @@
 package sample;
 
 import javafx.animation.PathTransition;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
-import javafx.stage.Stage;
 import javafx.util.Duration;
 
 
@@ -74,18 +67,22 @@ public class PierController implements Initializable {
     public Button btn_gate41;
     public AnchorPane apane1;
 
-    public double x;
-    public double y;
+    public double x1, x3; //x1 is for pier 1, x3 is for pier 3
+    public double y1, y3;
 
-    public ImageView loc;
+    public ImageView loc; //for pier 1 na pointer
+    public ImageView loc3; //for pier 3 na pointer
     public Path path = new Path();
     public PathTransition trans = new PathTransition();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         apane1.getChildren().add(path);
-        x = loc.getLayoutX()+loc.getLayoutBounds().getWidth()/2;
-        y = loc.getLayoutY()+loc.getLayoutBounds().getHeight()/2;
+        apane.getChildren().add(path);
+        x1 = loc.getLayoutX()+loc.getLayoutBounds().getWidth()/2;
+        y1 = loc.getLayoutY()+loc.getLayoutBounds().getHeight()/2;
+        x3 = loc3.getLayoutX()+loc3.getLayoutBounds().getWidth()/2;
+        y3 = loc3.getLayoutY()+loc3.getLayoutBounds().getHeight()/2;
  /*       btn_gate1.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -107,16 +104,16 @@ public class PierController implements Initializable {
             System.out.println("You clicked " + clickedBtn.getText());
 
         }
-
+        //pier 1 toilet
         if(source == btn_toilets1){
             apane1.getChildren().remove(path);
             path = new Path();
             apane1.getChildren().add(path);
             path.setStrokeWidth(5);
             path.setStroke(Color.YELLOW);
-            path.getElements().add(new MoveTo(x,y));
-            path.getElements().add(new LineTo(x+145, y));
-            path.getElements().add(new LineTo(x+145, y-25));
+            path.getElements().add(new MoveTo(x1,y1));
+            path.getElements().add(new LineTo(x1+145, y1));
+            path.getElements().add(new LineTo(x1+145, y1-25));
 
             loc.setLayoutX(0);
             loc.setLayoutY(-15);
@@ -128,15 +125,37 @@ public class PierController implements Initializable {
             trans.play();
         }
 
+        //pier 3 toilet
+        if(source == btn_toilets3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(5);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+145, y3));
+            path.getElements().add(new LineTo(x3+145, y3-25));
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(2));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //pier 1 canteen
         if(source == btn_canteen1){
             apane1.getChildren().remove(path);
             path = new Path();
             apane1.getChildren().add(path);
             path.setStrokeWidth(5);
             path.setStroke(Color.YELLOW);
-            path.getElements().add(new MoveTo(x,y));
-            path.getElements().add(new LineTo(x+250, y));
-            path.getElements().add(new LineTo(x+250, y-25));
+            path.getElements().add(new MoveTo(x1,y1));
+            path.getElements().add(new LineTo(x1+250, y1));
+            path.getElements().add(new LineTo(x1+250, y1-25));
 
             loc.setLayoutX(0);
             loc.setLayoutY(-15);
