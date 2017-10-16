@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
 import javafx.stage.Stage;
@@ -48,6 +49,7 @@ public class PierController implements Initializable {
     public Button btn_gate2;
     public Button btn_gate3;
     public Button btn_gate4;
+    public AnchorPane apane;
 
     //pier 1
     public Button btn_atm;
@@ -70,6 +72,10 @@ public class PierController implements Initializable {
     public Button btn_gate21;
     public Button btn_gate31;
     public Button btn_gate41;
+    public AnchorPane apane1;
+
+    public double x;
+    public double y;
 
     public ImageView loc;
     public Path path = new Path();
@@ -77,6 +83,9 @@ public class PierController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        apane1.getChildren().add(path);
+        x = loc.getLayoutX()+loc.getLayoutBounds().getWidth()/2;
+        y = loc.getLayoutY()+loc.getLayoutBounds().getHeight()/2;
  /*       btn_gate1.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -100,16 +109,42 @@ public class PierController implements Initializable {
         }
 
         if(source == btn_toilets1){
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(5);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x,y));
+            path.getElements().add(new LineTo(x+145, y));
+            path.getElements().add(new LineTo(x+145, y-25));
 
-            path.setStrokeWidth(10);
-            path.setStroke(Color.BLACK);
-            path.getElements().add(new MoveTo(0, 0));
-            path.getElements().add(new LineTo(155, 0));
-            path.getElements().add(new LineTo(155, -35));
+            loc.setLayoutX(0);
+            loc.setLayoutY(-15);
+
             trans.setNode(loc);
-            trans.setDuration(Duration.seconds(5));
+            trans.setDuration(Duration.seconds(2));
             trans.setPath(path);
             trans.setCycleCount(1);
+            trans.play();
+        }
+
+        if(source == btn_canteen1){
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(5);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x,y));
+            path.getElements().add(new LineTo(x+250, y));
+            path.getElements().add(new LineTo(x+250, y-25));
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-15);
+
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+            trans.setCycleCount(1);
+            trans.setPath(path);
             trans.play();
         }
 
