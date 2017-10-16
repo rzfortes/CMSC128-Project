@@ -67,7 +67,6 @@ public class PierController implements Initializable {
     public Button btn_gate31;
     public Button btn_gate41;
     public AnchorPane apane1;
-    public Tooltip tp = new Tooltip();
 
     public double x1, x3; //x1 is for pier 1, x3 is for pier 3
     public double y1, y3;
@@ -86,18 +85,6 @@ public class PierController implements Initializable {
         x3 = loc3.getLayoutX() + loc3.getLayoutBounds().getWidth() / 2;
         y3 = (loc3.getLayoutY() + loc3.getLayoutBounds().getHeight() / 2) + 5;
 
-        apane1.setOnMouseEntered(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-
-                String msg = "(x: " + (event.getX() - 21) + ")";
-
-                tp.setText(msg);
-
-                Node node = (Node) event.getSource();
-                tp.show(node, event.getScreenX(), event.getScreenY());
-            }
-        });
 
  /*       btn_gate1.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
@@ -109,9 +96,6 @@ public class PierController implements Initializable {
 */
     }
 
-    public void setOnMouseEntered(MouseEvent mouseEvent) {
-        // do nothing
-    }
 
 
     // how event handling in buttons would look like.
@@ -465,19 +449,54 @@ public class PierController implements Initializable {
             trans.play();
         }
 
+        //PIER THREE BUTTONS
         //pier 3 toilet
-        if (source == btn_toilets3) {
+        if(source == btn_toilets3){
             apane.getChildren().remove(path);
             path = new Path();
             apane.getChildren().add(path);
             path.setStrokeWidth(3);
             path.setStroke(Color.YELLOW);
-            path.getElements().add(new MoveTo(x3, y3));
-            path.getElements().add(new LineTo(x3 + 145, y3));
-            path.getElements().add(new LineTo(x3 + 145, y3 - 25));
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+255, y3-15));
+            path.getElements().add(new LineTo(x3+255, y3+15));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+470, y3));
+            path.getElements().add(new LineTo(x3+780, y3));
+            path.getElements().add(new LineTo(x3+780, y3-5));
+            path.getElements().add(new LineTo(x3+780, y3+5));
+
 
             loc3.setLayoutX(0);
-            loc3.setLayoutY(-10);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //holding area
+        if(source == btn_wait3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+50, y3));
+            path.getElements().add(new LineTo(x3+50, y3-10));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
 
             trans.setNode(loc3);
             trans.setDuration(Duration.seconds(2));
@@ -485,5 +504,337 @@ public class PierController implements Initializable {
             trans.setCycleCount(1);
             trans.play();
         }
+
+        //firearm deposit
+        if(source == btn_frmDep3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+320, y3));
+            path.getElements().add(new LineTo(x3+320, y3-40));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(2));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //preinspection
+        if(source == btn_preIns3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+320, y3));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+330, y3-20));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(2));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //human trafficking
+        if(source == btn_hmnTra3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+320, y3));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+360, y3-20));
+            path.getElements().add(new LineTo(x3+360, y3-35));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(2));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+
+        //holding area
+        if(source == btn_hldArea3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+320, y3));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+400, y3-20));
+            path.getElements().add(new LineTo(x3+400, y3-35));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(2));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //check in
+        if(source == btn_chkIn3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+320, y3));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+430, y3-20));
+            path.getElements().add(new LineTo(x3+430, y3+10));
+            path.getElements().add(new LineTo(x3+470, y3+10));
+            path.getElements().add(new LineTo(x3+470, y3-45));
+            path.getElements().add(new LineTo(x3+470, y3+45));
+            path.getElements().add(new LineTo(x3+470, y3+10));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Predeparture
+        if(source == btn_preDep3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+650, y3));
+            path.getElements().add(new LineTo(x3+650, y3-5));
+            path.getElements().add(new LineTo(x3+650, y3+5));
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //canteen
+        if(source == btn_canteen3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1180, y3));
+            path.getElements().add(new LineTo(x3+1180, y3+15));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //massage area
+        if(source == btn_msgArea3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1180, y3));
+            path.getElements().add(new LineTo(x3+1180, y3-40));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+
+        //prayer room
+        if(source == btn_prayRm3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1200, y3));
+            path.getElements().add(new LineTo(x3+1200, y3-45));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //clinic
+        if(source == btn_clinic3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1198, y3));
+            path.getElements().add(new LineTo(x3+1198, y3-40));
+            path.getElements().add(new LineTo(x3+1205, y3-40));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //breastfeed
+        if(source == btn_bstFeed3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1195, y3));
+            path.getElements().add(new LineTo(x3+1195, y3-5));
+            path.getElements().add(new LineTo(x3+1205, y3-5));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //cafe
+        if(source == btn_cof3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1150, y3));
+            path.getElements().add(new LineTo(x3+1150, y3-15));
+            path.getElements().add(new LineTo(x3+1150, y3+15));
+            path.getElements().add(new LineTo(x3+1150, y3+5));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(5));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
     }
 }
