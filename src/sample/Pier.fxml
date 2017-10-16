@@ -44,6 +44,11 @@
                                                                         <Font size="33.0" />
                                                                     </font>
                                                                 </Label>
+                                                                <ImageView fx:id="loc" fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="location-512.png" />
+                                                                    </image>
+                                                                </ImageView>
                                                                 <ImageView fitHeight="170.0" fitWidth="1251.0" layoutX="14.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
                                                                     <image>
                                                                         <Image url="@P1F2.jpg" />
@@ -54,7 +59,6 @@
                                                                         <Font size="33.0" />
                                                                     </font>
                                                                 </Label>
-
                                                             </children>
                                                         </AnchorPane>
                                                     </content>
