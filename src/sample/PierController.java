@@ -66,6 +66,10 @@ public class PierController implements Initializable {
     public Button btn_gate21;
     public Button btn_gate31;
     public Button btn_gate41;
+    public Button btn_gate51;
+    public Button btn_gate61;
+    public Button btn_gate71;
+    public Button btn_gate81;
     public AnchorPane apane1;
 
     public double x1, x3; //x1 is for pier 1, x3 is for pier 3
@@ -832,6 +836,272 @@ public class PierController implements Initializable {
             trans.setNode(loc3);
             trans.setDuration(Duration.seconds(5));
             trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        
+        //Pier 1 gate1
+        if(source == btn_gate11){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 570, y1));
+            path.getElements().add(new LineTo(x1 + 570, y1+50));
+            path.getElements().add(new LineTo(x1 + 580, y1+50));
+//            path.getElements().add(new LineTo(x1 + 830, y1));
+//            path.getElements().add(new LineTo(x1 + 875, y1+30));
+//            path.getElements().add(new LineTo(x1 + 915, y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Pier 1 gate2
+        if(source == btn_gate21){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 735, y1));
+            path.getElements().add(new LineTo(x1 + 735, y1+50));
+            path.getElements().add(new LineTo(x1 + 745, y1+50));
+//            path.getElements().add(new LineTo(x1 + 830, y1));
+//            path.getElements().add(new LineTo(x1 + 875, y1+30));
+//            path.getElements().add(new LineTo(x1 + 915, y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate3
+        if(source == btn_gate31){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 830, y1));
+            path.getElements().add(new LineTo(x1 + 875, y1+30));
+            path.getElements().add(new LineTo(x1 + 915, y1));
+            path.getElements().add(new LineTo(x1 + 960, y1));
+            path.getElements().add(new LineTo(x1 + 960, y1+50));
+            path.getElements().add(new LineTo(x1 + 975, y1+50));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate4
+        if(source == btn_gate41){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 830, y1));
+            path.getElements().add(new LineTo(x1 + 875, y1+30));
+            path.getElements().add(new LineTo(x1 + 915, y1));
+            path.getElements().add(new LineTo(x1 + 1110 , y1));
+            path.getElements().add(new LineTo(x1 + 1110, y1+50));
+            path.getElements().add(new LineTo(x1 + 1115, y1+50));
+
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate5
+        if(source == btn_gate51){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 830, y1));
+            path.getElements().add(new LineTo(x1 + 875, y1+30));
+            path.getElements().add(new LineTo(x1 + 915, y1));
+            path.getElements().add(new LineTo(x1 + 1110 , y1));
+            path.getElements().add(new LineTo(x1 + 1110, y1-50));
+            path.getElements().add(new LineTo(x1 + 1105, y1-50));
+
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate6
+        if(source == btn_gate61){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 830, y1));
+            path.getElements().add(new LineTo(x1 + 875, y1+30));
+            path.getElements().add(new LineTo(x1 + 915, y1));
+            path.getElements().add(new LineTo(x1 + 960, y1));
+            path.getElements().add(new LineTo(x1 + 960, y1-50));
+            path.getElements().add(new LineTo(x1 + 975, y1-50));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate7
+        if(source == btn_gate71){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 735, y1));
+            path.getElements().add(new LineTo(x1 + 735, y1-50));
+            path.getElements().add(new LineTo(x1 + 745, y1-50));
+//            path.getElements().add(new LineTo(x1 + 830, y1));
+//            path.getElements().add(new LineTo(x1 + 875, y1+30));
+//            path.getElements().add(new LineTo(x1 + 915, y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
+            trans.setCycleCount(1);
+            trans.play();
+        }
+        //Pier 1 gate8
+        if(source == btn_gate81){
+            trans.pause();
+            apane1.getChildren().remove(path);
+            path = new Path();
+            apane1.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+
+            loc.setLayoutX(0);
+            loc.setLayoutY(-10);
+
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 +  315, y1));
+            path.getElements().add(new LineTo(x1 + 415, y1 + 40));
+            path.getElements().add(new LineTo(x1 + 525, y1));
+            path.getElements().add(new LineTo(x1 + 570, y1));
+            path.getElements().add(new LineTo(x1 + 570, y1-50));
+            path.getElements().add(new LineTo(x1 + 580, y1-50));
+//            path.getElements().add(new LineTo(x1 + 830, y1));
+//            path.getElements().add(new LineTo(x1 + 875, y1+30));
+//            path.getElements().add(new LineTo(x1 + 915, y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1));
+//            path.getElements().add(new LineTo(x1 + 1180 , y1 + 10));
+//            path.getElements().add(new LineTo(x1 + 1190 , y1 + 10));
+
+            trans.setPath(path);
+            trans.setNode(loc);
+            trans.setDuration(Duration.seconds(2));
+
             trans.setCycleCount(1);
             trans.play();
         }
