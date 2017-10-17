@@ -28,12 +28,9 @@ public class PierController implements Initializable {
     public Button btn_chkIn3;
     public Button btn_clinic3;
     public Button btn_cof3;
-    public Button btn_entrance3;
     public Button btn_frmDep3;
-    public Button btn_fireExits3;
     public Button btn_hldArea3;
     public Button btn_hmnTra3;
-    public Button btn_kdsCorner3;
     public Button btn_msgArea3;
     public Button btn_prayRm3;
     public Button btn_preDep3;
@@ -45,6 +42,10 @@ public class PierController implements Initializable {
     public Button btn_gate2;
     public Button btn_gate3;
     public Button btn_gate4;
+    public Button btn_gate5;
+    public Button btn_gate6;
+    public Button btn_gate7;
+    public Button btn_gate8;
     public AnchorPane apane;
 
     //pier 1
@@ -538,10 +539,15 @@ public class PierController implements Initializable {
             apane.getChildren().add(path);
             path.setStrokeWidth(3);
             path.setStroke(Color.YELLOW);
-            path.getElements().add(new MoveTo(x3,y3));
-            path.getElements().add(new LineTo(x3+320, y3));
-            path.getElements().add(new LineTo(x3+320, y3-20));
-            path.getElements().add(new LineTo(x3+330, y3-20));
+            path.getElements().add(new MoveTo(x1, y1));
+            path.getElements().add(new LineTo(x1 + 320, y1));
+            path.getElements().add(new LineTo(x1 + 320, y1 - 20));
+            path.getElements().add(new LineTo(x1 + 335, y1 - 20));
+            path.getElements().add(new MoveTo(x1 + 320, y1));
+            path.getElements().add(new LineTo(x1 + 320, y1 + 20));
+            path.getElements().add(new LineTo(x1 + 335, y1 + 20));
+            path.getElements().add(new LineTo(x1 + 320, y1+20));
+            path.getElements().add(new LineTo(x1 + 320, y1));
 
 
             loc3.setLayoutX(0);
@@ -839,7 +845,242 @@ public class PierController implements Initializable {
             trans.setCycleCount(1);
             trans.play();
         }
-        
+
+        //Pier 3 gate1
+        if(source == btn_gate1){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+570, y3));
+            path.getElements().add(new LineTo(x3+570, y3+75));
+            path.getElements().add(new LineTo(x3+585, y3+75));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Pier 3 gate2
+        if(source == btn_gate2){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+665, y3));
+            path.getElements().add(new LineTo(x3+665, y3+75));
+            path.getElements().add(new LineTo(x3+675, y3+75));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Pier 3 gate3
+        if(source == btn_gate3){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+865, y3));
+            path.getElements().add(new LineTo(x3+865, y3+75));
+            path.getElements().add(new LineTo(x3+875, y3+75));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Pier 3 gate4
+        if(source == btn_gate4){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+955, y3));
+            path.getElements().add(new LineTo(x3+955, y3+75));
+            path.getElements().add(new LineTo(x3+965, y3+75));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        //Pier 3 gate 5
+        if(source == btn_gate5){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1045, y3));
+            path.getElements().add(new LineTo(x3+1045, y3+75));
+            path.getElements().add(new LineTo(x3+1055, y3+75));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        if(source == btn_gate6){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+1045, y3));
+            path.getElements().add(new LineTo(x3+1045, y3-50));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        if(source == btn_gate7){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+955, y3));
+            path.getElements().add(new LineTo(x3+955, y3-50));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+        if(source == btn_gate8){
+            apane.getChildren().remove(path);
+            path = new Path();
+            apane.getChildren().add(path);
+            path.setStrokeWidth(3);
+            path.setStroke(Color.YELLOW);
+            path.getElements().add(new MoveTo(x3,y3));
+            path.getElements().add(new LineTo(x3+255, y3));
+            path.getElements().add(new LineTo(x3+300, y3));
+            path.getElements().add(new LineTo(x3+300, y3-20));
+            path.getElements().add(new LineTo(x3+320, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3-20));
+            path.getElements().add(new LineTo(x3+390, y3));
+            path.getElements().add(new LineTo(x3+865, y3));
+            path.getElements().add(new LineTo(x3+865, y3-50));
+
+
+
+            loc3.setLayoutX(0);
+            loc3.setLayoutY(-15);
+
+            trans.setNode(loc3);
+            trans.setDuration(Duration.seconds(4));
+            trans.setPath(path);
+            trans.setCycleCount(1);
+            trans.play();
+        }
+
+
         //Pier 1 gate1
         if(source == btn_gate11){
             trans.pause();
