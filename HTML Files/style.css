@@ -1,0 +1,41 @@
+/*Import dubai-light font.
+  Make sure that it is inside the folder.*/
+@font-face {
+	font-family: "Dubai-Light";
+	src: url("Dubai-Light.otf");
+}
+
+* {
+	/*this hides the unnecessary white spaces around the img*/
+	margin: 0px;
+	/*this will hide vertical and horizontal scrollbar*/
+	/*overflow-y: hidden;*/
+	/*overflow-x: hidden;*/
+}
+
+h1 {
+	font-family: Dubai-Light;
+}
+
+button {
+	background-color: transparent;
+	outline: none;
+}
+
+.faq_btn {
+	position: absolute;
+	/*can be seen as y-axis*/
+	top: 230px;
+	/*can be seen as x-axis*/
+	left: 195px; 
+	height: 180px;
+	width: 205px;
+}
+
+.map_btn {
+	position: absolute;
+	top: 180px;
+	left: 550px;
+	height: 220px;
+	width: 245px;
+}
