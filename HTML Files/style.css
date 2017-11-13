@@ -9,8 +9,8 @@
 	/*this hides the unnecessary white spaces around the img*/
 	margin: 0px;
 	/*this will hide vertical and horizontal scrollbar*/
-	/*overflow-y: hidden;*/
-	/*overflow-x: hidden;*/
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -30,6 +30,8 @@ button {
 	left: 195px; 
 	height: 180px;
 	width: 205px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .map_btn {
@@ -38,4 +40,26 @@ button {
 	left: 550px;
 	height: 220px;
 	width: 245px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.pier_txt {
+	position: absolute;
+	top: 400px;
+	left: 215px;
+	font-family: Dubai-Light;
+	font-size: 45px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.map_txt {
+	position: absolute;
+	top: 400px;
+	left: 630px;
+	font-family: Dubai-Light;
+	font-size: 45px;
+	padding: 0px;
+	margin: 0px;
 }
