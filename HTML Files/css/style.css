@@ -101,6 +101,15 @@ header a:hover{
   width:30%;
   padding:10px;
 }
+
+#boxes .box2{
+  float:left;
+  text-decoration:none;
+  text-align: center;
+  width:40%;
+  padding:40px;
+}
+
 #boxes a{
   color:#337AB7;
   text-decoration:none;
@@ -114,6 +123,10 @@ header a:hover{
 
 #boxes .box img{
   width:90px;
+}
+
+#boxes .box2 img{
+  width:200px;
 }
 
 /* Sidebar */
