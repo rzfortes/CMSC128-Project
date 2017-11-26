@@ -3,6 +3,7 @@
 Primary style
 
 -------------------------------- */
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,8 +14,13 @@ Primary style
   content: '';
 }
 
+html *
+{
+   font-family: sans-serif;!important;
+}
+
 body {
-  font-size: 100%;
+  font-size: 0.875;
   font-family: "Open Sans", sans-serif;
   color: #4e5359;
   background-color: #f3f3f5;
@@ -40,7 +46,7 @@ body.cd-overlay::after {
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   body::after {
     display: none;
   }
@@ -57,30 +63,65 @@ Main components
 
 -------------------------------- */
 header {
-  position: relative;
-  height: 180px;
-  line-height: 180px;
-  text-align: center;
-  background: url(../images/bg2.png) top left no-repeat;
+  background:#333333;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#337AB7 3px solid;
 }
 header h1 {
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-  font-size: 1.25rem;
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
 }
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 240px;
-    line-height: 240px;
-  }
-  header h1 {
-    font-size: 36px;
-    font-size: 2.25rem;
-    font-weight: 300;
-  }
+@media only screen and (min-width: 1024px) {}
+  /* Header **/
+
+header{
+  background:#333333;
+  color:#ffffff;
+  height: 100px;
+  border-bottom:#337AB7 3px solid;
 }
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#337AB7;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#337AB7;
+  font-weight:bold;
+}
+
 
 .cd-faq {
   width: 90%;
@@ -116,6 +157,7 @@ header h1 {
   border-bottom: 1px solid #555b61;
   text-overflow: ellipsis;
 }
+
 .cd-faq-categories a::before, .cd-faq-categories a::after {
   /* plus icon on the right */
   position: absolute;
@@ -144,7 +186,7 @@ header h1 {
   }
   .cd-faq-categories a {
     font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 0.8rem;
     font-weight: 600;
     padding-left: 24px;
     padding: 0 24px;
@@ -156,7 +198,7 @@ header h1 {
     display: none;
   }
   .no-touch .cd-faq-categories a:hover {
-    background: #555b61;
+    background: #0a0a0a;
   }
   .no-js .cd-faq-categories {
     width: 100%;
@@ -178,7 +220,7 @@ header h1 {
     right: auto;
     left: 0;
     height: 100%;
-    width: 3px;
+    width: px;
     background-color: #337ab7;
     opacity: 0;
     -webkit-transition: opacity 0.2s;
@@ -339,10 +381,10 @@ header h1 {
 }
 .cd-faq-group .cd-faq-title h2 {
   text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 15px;
+  font-size: 1.7rem;
   font-weight: 700;
-  color: #bbbbc7;
+  color: #337AB7;
 }
 .no-js .cd-faq-group {
   display: block;
@@ -392,7 +434,7 @@ header h1 {
     top: 50%;
     height: 2px;
     width: 13px;
-    background: #cfdca0;
+    background: #337AB7;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition-property: -webkit-transform;
