@@ -134,13 +134,19 @@ header a:hover{
 }
 
 #boxes a:hover{
-  color:#FFFFFF;
+  color:#4DAACC;
   font-weight:bold;
 }
 
 #boxes .box img{
   width:100px;
 }
+
+#boxes .box img:hover{
+  width:100px;
+  background: #4DAACC;
+}
+
 /* Buttons */
 .button {
     position: relative;
