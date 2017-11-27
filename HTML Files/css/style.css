@@ -2,20 +2,24 @@ body{
   font: 15px/1.5 "Open Sans", sans-serif;
   padding:0;
   margin:0;
-  background: url('../images/bg2.png') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+  align-content: center;
+
+  background: url('../images/wave.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom; border-bottom;
+  background-size: 100%;
   text-align:center;
-  background-color:#ffffff;
 }
 
 /* Global */
 .container{
-  width:80%;
+  width:100%;
+  height: 100%;
   margin:auto;
   overflow:hidden;
+  align-content: left;
+  display: inline-block;
 }
 
 ul{
@@ -24,7 +28,7 @@ ul{
 }
 
 .button_1{
-  height:38px;
+  height:100%;
   background:#e8491d;
   border:0;
   padding-left: 20px;
@@ -42,18 +46,18 @@ ul{
 
 /* Header **/
 header{
-  background:#333333;
-  color:#ffffff;
+  background: transparent;
+  color:#000000;
   padding-top:30px;
   min-height:70px;
   border-bottom:#337AB7 3px solid;
 }
 
 header a{
-  color:#ffffff;
+  color:#5B7680;
   text-decoration:none;
-  text-transform: uppercase;
-  font-size:16px;
+  text-transform: none;
+  font-size:15px;
 }
 
 header li{
@@ -64,6 +68,10 @@ header li{
 
 header #branding{
   float:left;
+}
+
+header #branding img{
+  width: 300px;
 }
 
 header #branding h1{
@@ -87,10 +95,24 @@ header a:hover{
 
 /* Marquee */
 #marquee .announcements{
+  width: 100%;
   color:#ffffff;
-  background:#333333;
+  background:#4DAACC;
   font-weight:bold;
+  float: right;
   border-bottom:#337AB7 3px solid;
+  display:inline-block;
+  vertical-align: center;
+}
+
+#marquee p{
+  width: 25%;
+  color:#ffffff;
+  background: #4DAACC;
+  vertical-align: center;
+  font-weight:bold;
+  float: left;
+  display: inline-block;
 }
 
 /* Boxes */
@@ -99,11 +121,11 @@ header a:hover{
 }
 
 #boxes .box{
-  float:left;
+  float: left;
   text-decoration:none;
   text-align: center;
-  width:30%;
-  padding:10px;
+  width:20%;
+  padding:20px;
 }
 #boxes a{
   color:#337AB7;
@@ -117,7 +139,7 @@ header a:hover{
 }
 
 #boxes .box img{
-  width:90px;
+  width:100px;
 }
 /* Buttons */
 .button {
@@ -156,11 +178,12 @@ header a:hover{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
+  padding:100px;
   color:#ffffff;
-  background-color:#337AB7;
+  background-color:#transparent;
   text-align: center;
+
+  
 }
 
 }

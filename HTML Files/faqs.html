@@ -17,12 +17,12 @@
     <header>
       <div class="container">
         <div id="branding">
-          
+          <h1><span class="highlight"><img src="./images/cpa-logo.png"></span></h1>
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="faqs.html">FAQ</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="faqs.html">FAQ</a></li>
             <li><a href="guidelines.html">Guidelines</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="portner.html">Porter Assistance</a></li>
@@ -32,13 +32,13 @@
     </header>
       <section id="marquee">
         <div class="announcements">
-          <marquee>Supercat bound for Bohol: Gate 8 • Liteferry bound for Ilo-Ilo: Gate 5 • The quick brown fox jumps over the lazy dog </marquee>
+         <p id="date"></p><p>Announcements go here.</p>
         </div>
       </section>
 
 <section class="cd-faq">
     <ul class="cd-faq-categories">
-        <li><a class="selected" href="#basics">General Information</a></li>
+        <li><img src="faq-general-info-button.png"><a class="selected" href="#basics">General Information</a></li>
         <li><a href="#Porter">Porter</a></li>
         <li><a href="#Terminal">Terminal</a></li>
         <li><a href="#payments">Payments</a></li>
@@ -126,6 +126,13 @@
     </div> <!-- cd-faq-items -->
     <a href="#0" class="cd-close-panel">Close</a>
 </section> <!-- cd-faq -->
+<marquee> In case of Emergency: call 1234-567-8901</marquee>
+    <script>
+        document.getElementById("date").innerHTML = Date();
+    </script>
+<footer>
+  <p> </p>
+</footer>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
