@@ -31,9 +31,11 @@
         </nav>
       </div>
     </header>
-      <section id="marquee">
-        <div class="announcements">
-         <p id="clockbox"></p><marquee><p><?php
+      <!-- <section id="marquee">
+         <p id="clockbox" class="clock"></p>
+         <div class="announcements">
+         <marquee class="text">
+           <?php
 
               $f = fopen("announcements.txt", "r");
 
@@ -47,9 +49,9 @@
 
               fclose($f);
 
-            ?></p></marquee>
-        </div>
-      </section>
+            ?>
+         </marquee>
+         </div> -->
 
 <section class="cd-faq">
     <ul class="cd-faq-categories">

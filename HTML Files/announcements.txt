@@ -1,6 +1,3 @@
 Supercat bound for Bohol: Gate 8
 Liteferry bound for Ilo-Ilo: Gate 5
-Supercat bound for Bohol: Gate 8
-Liteferry bound for Ilo-Ilo: Gate 5
-Supercat bound for Bohol: Gate 8
-Liteferry bound for Ilo-Ilo: Gate 5
+OceanJet

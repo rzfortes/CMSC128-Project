@@ -28,8 +28,10 @@
       </div>
     </header>
       <section id="marquee">
-        <div class="announcements">
-         <p id="clockbox"></p><marquee><p><?php
+         <p id="clockbox" class="clock"></p>
+         <div class="announcements">
+         <marquee class="text">
+           <?php
 
               $f = fopen("announcements.txt", "r");
 
@@ -43,10 +45,11 @@
 
               fclose($f);
 
-            ?></p></marquee>
-        </div>
-      </section>
-    <section id="boxes">
+            ?>
+         </marquee>
+         </div>
+      <!-- </section> -->
+      <section id="boxes">
       <div class="container">
         <div class="box">
           <a href="faqs.php"><img src="./images/icons/faqs-large.png">

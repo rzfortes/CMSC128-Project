@@ -4,6 +4,13 @@ Primary style
 
 -------------------------------- */
 
+/*Import dubai-light font.
+  Make sure that it is inside the folder.*/
+@font-face {
+  font-family: "Dubai-Light";
+  src: url("Dubai-Light.otf");
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -21,7 +28,7 @@ body {
 }
 
 body.container{
-  font: 15px/1.5 "Open Sans", sans-serif;
+  font: 15px/1.5 Dubai-Light;
   width:80%;
   margin:auto;
   overflow:hidden;
@@ -66,11 +73,10 @@ Main components
 header {
   background:#333333;
   color:#ffffff;
-  border-bottom:#337AB7 3px solid;
 }
 
 header #branding{
-  font: 30px "Open Sans", sans-serif;
+  font: 30px Dubai-Light;
   float:left;
   font-weight:bold;
 }
@@ -88,7 +94,7 @@ header container{
 header li{
   float:left;
   display:inline;
-  padding: 0 20px 0 20px;
+  /*padding: 0 20px 0 20px;*/
 }
 
 .cd-faq {

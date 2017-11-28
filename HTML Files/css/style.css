@@ -1,5 +1,12 @@
+/*Import dubai-light font.
+  Make sure that it is inside the folder.*/
+@font-face {
+  font-family: "Dubai-Light";
+  src: url("Dubai-Light.otf");
+}
+
 body{
-  font: 15px/1.5 "Open Sans", sans-serif;
+  font: 15px/1.5 Dubai-Light;
   padding:0;
   margin:0;
   align-content: center;
@@ -51,14 +58,13 @@ header{
   color:#000000;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#337AB7 3px solid;
 }
 
 header a{
   color:#5B7680;
   text-decoration:none;
   text-transform: none;
-  font-size:15px;
+  font-size:25px;
 }
 
 header li{
@@ -95,26 +101,48 @@ header a:hover{
 }
 
 /* Marquee */
-#marquee .announcements{
-  width: 100%;
-  color:#ffffff;
-  background:#4DAACC;
-  font-weight:bold;
-  float: right;
-  border-bottom:#337AB7 3px solid;
-  display:inline-block;
-  vertical-align: center;
-}
 
-#marquee p{
-  width: 100%;
+#marquee .clock{
+  width: 14%;
+  font-size: 17px;
+  font-family: Dubai-Light;
   color:#ffffff;
   background: #4DAACC;
+  /*background-color: red;*/
   vertical-align: center;
-  font-weight:bold;
   float: left;
-  text-align: center;
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 41px;
   display: inline-block;
+}
+
+/*.bar {
+  color: red;
+  font-size: 50px;
+  left: 0px;
+  display: inline-block;
+  float: left;
+}*/
+
+#marquee .announcements {
+  margin-bottom: 41px;
+  left: 50px;
+  display: inline-block;
+  float: right;
+  vertical-align: center;
+  text-align: center;
+  font-size: 35px;
+  width: 84%;
+  height: 75px;
+  /*background-color: rgb(29,90,108);*/
+  background: #4DAACC;
+  color: white;
+  font-family: Dubai-Light;
+}
+
+.text {
+  margin-top: 10px;
 }
 
 /* Boxes */

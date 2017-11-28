@@ -28,8 +28,10 @@
 	      </div>
 	    </header>
 	    <section id="marquee">
-        <div class="announcements">
-         <p id="clockbox"></p><marquee><p><?php
+         <p id="clockbox" class="clock"></p>
+         <div class="announcements">
+         <marquee class="text">
+           <?php
 
               $f = fopen("announcements.txt", "r");
 
@@ -43,9 +45,9 @@
 
               fclose($f);
 
-            ?></p></marquee>
-        </div>
-      </section>
+            ?>
+         </marquee>
+         </div>
 		<!--img src="images/bg2.png" alt="Background" style="max-width: 100%; max-height: 100%;" class="bg2"-->
 	</div>
 	
