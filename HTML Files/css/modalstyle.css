@@ -1,7 +1,7 @@
 html,
 
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 a {
@@ -32,7 +32,7 @@ a {
   text-align: center;
   transition-duration: 0.4s;
   text-decoration: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
   cursor: pointer;
   vertical-align: center;
 }
@@ -112,7 +112,7 @@ color: #FFFFFF;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
     cursor: pointer;
 }
 
