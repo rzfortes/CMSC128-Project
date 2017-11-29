@@ -28,7 +28,7 @@ body {
 }
 
 body.container{
-  font: 15px/1.5 Dubai-Light;
+  font: 15px/1.5 'Montserrat';
   width:80%;
   margin:auto;
   overflow:hidden;

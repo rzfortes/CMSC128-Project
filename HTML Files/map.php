@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/modalstyle.css">
+	<!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script type="text/javascript" src="js/time.js"></script>
 	<title>Map</title>
 </head>
@@ -52,33 +55,30 @@
 	</div>
 	
 	<!-- Button containers for Pier 1 and 3-->
-	<div class="container">
+	<!-- <div class="container">
 	  <div class="interior">
 	    <a class="btn" href="#open-modal">Show Pier 1 Map</a>
 	    <a class="btn" href="#open-modal3">Show Pier 3 Map</a>
 	  </div>
-	</div>
+	</div> -->
 	<!-- Pier 1 Modal content-->
-	<div id="open-modal" class="modal-window">
+	<!-- <div id="open-modal" class="modal-window">
 	   <div>
 		    <a href="#modal-close" title="Close" class="modal-close">Close Pier 1 Map</a>
 	    	<div class = "modal-content"><embed src=".\images\Pier1.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
 	  </div>
-	</div>
+	</div> -->
 	<!-- Pier 3 Modal content-->
-	<div id="open-modal3" class="modal-window">
+	<!-- <div id="open-modal3" class="modal-window">
 	  <div>
 		    <a href="#modal-close" title="Close" class="modal-close">Close Pier 3 Map</a>
 		    
 	    	<div class = "modal-content"><embed src=".\images\Pier3.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
 	  </div>
-	</div>
-	<marquee> In case of Emergency: call 1234-567-8901</marquee>
-    <script>
-        document.getElementById("date").innerHTML = Date();
-    </script>
-	<footer>
-      <p> </p>
-    </footer>
+	</div> -->
+	<embed src=".\images\Pier1.swf" quality="high" bgcolor="#4DAACC" width="1024" height="576" name="intro" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	<!-- <p> Emergency hotline: 415-5169</p> -->
+	<!-- <footer class="foot">
+    </footer> -->
 </body>
 </html>

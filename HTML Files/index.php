@@ -8,6 +8,9 @@
     <title>Passenger Assistance System | Welcome</title>
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script type="text/javascript" src="js/time.js"></script>
   </head>
   <body>
@@ -48,7 +51,7 @@
             ?>
          </marquee>
          </div>
-      <!-- </section> -->
+      </section>
       <section id="boxes">
       <div class="container">
         <div class="box">
@@ -66,15 +69,15 @@
           <h3>Map</h3></a>
           <p>Looking for your assigned Gate? or the nearest Cafeteria? For detailed steps to certain key locations, click here.</p>
         </div>
-        <div class="box">
+        <!-- <div class="box">
           <a href="portner.html"><img src="./images/icons/porter-large.png">
           <h3>   Porter Assistance</h3></a>
           <p>Need help with your luggage? Say no more! Our friendly porters are here to help.</p>
-        </div>
+        </div> -->
       </div>
     </section>
-    <marquee id="hotline"> In case of Emergency: call 1234-567-8901</marquee>
-    <footer>
+    <p id="hotline"> Emergency hotline: 415-5169</p>
+    <footer class="foot">
     </footer>
   </body>
 </html>

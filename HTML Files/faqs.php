@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/faqstyle.css">
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script type="text/javascript" src="js/time.js"></script>
   </head>
   <body>
@@ -143,7 +146,7 @@
     </div> <!-- cd-faq-items -->
     <a href="#0" class="cd-close-panel">Close</a>
 </section> <!-- cd-faq -->
-<marquee> In case of Emergency: call 1234-567-8901</marquee>
+<!-- <p> Emergency hotline: 1234-567-8901</p> -->
 <footer>
   <p> </p>
 </footer>

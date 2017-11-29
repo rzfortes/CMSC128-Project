@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/modalstyle.css">
+	<!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script type="text/javascript" src="js/time.js"></script>
 	<title>Map</title>
 </head>
@@ -53,21 +56,21 @@
 	</div>
 	
 	<!-- Button containers for Pier 1 and 3-->
-	<div class="container">
+	<!-- <div class="container">
 	  <div class="interior">
 	    <a class="btn" href="#open-modal">Guidelines Flowchart</a>
 	  </div>
-	</div>
+	</div> -->
 	<!-- Pier 1 Modal content-->
-	<div id="open-modal" class="modal-window">
+	<!-- <div id="open-modal" class="modal-window" style="background-color: white;">
 	   <div>
 		    <a href="#modal-close" title="Close" class="modal-close">Close Flowchart</a>
-	    	<div class = "modal-content"><embed src=".\images\process_Scene-1.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
+	    	<div class = "modal-content"><embed src=".\images\processFlow.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
 	  </div>
-	</div>
-	<marquee> In case of Emergency: call 1234-567-8901</marquee>
-	<footer>
-      <p> </p>
-    </footer>
+	</div> -->
+	<embed style="background-color: transparent;" src=".\images\processFlow.swf" quality="high" width="1024" height="576" name="intro" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	<!-- <p> Emergency hotline: 415-5169</p> -->
+	<!-- <footer>
+    </footer> -->
 </body>
 </html>
