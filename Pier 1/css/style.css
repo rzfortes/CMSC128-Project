@@ -213,11 +213,11 @@ header a:hover{
 }
 
 #boxes .box img{
-  width:150px;
+  width:100px;
 }
 
 #boxes .box img:hover{
-  width:150px;
+  width:100px;
   background: #4DAACC;
 }
 

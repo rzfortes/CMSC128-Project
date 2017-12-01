@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Pier Guide</title>
+</head>
+<body>
+<!-- Background div-->
+	<div style="position: relative;">
+		<header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight"><img src="./images/cpa-logo.png"></span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="faqs.html">FAQ</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="portner.html">Porter Assistance</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="marquee">
+        <div class="announcements">
+         <p id="date"></p><p>Announcements go here.</p>
+        </div>
+      </section>
+		<!--img src="images/bg2.png" alt="Background" style="max-width: 100%; max-height: 100%;" class="bg2"
+		-->
+
+		<section id="boxes">
+	      <div class="container">
+	        <div class="box2">
+	          <a href="faqs.html"><img src="./images/faq.png">
+	          <h3>FAQ</h3></a>
+	        </div>
+	        <div class="box2">
+	          <a href="#"><img src="./images/faq.png">
+	          <h3>Process Flow</h3></a>
+	        </div>
+	      </div>
+	    </section>
+
+	</div>
+	<marquee> In case of Emergency: call 1234-567-8901</marquee>
+    <script>
+        document.getElementById("date").innerHTML = Date();
+    </script>
+	<footer>
+      <p> </p>
+    </footer>
+</body>
+</html>
