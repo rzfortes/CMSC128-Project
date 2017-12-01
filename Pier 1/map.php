@@ -25,7 +25,6 @@
 	            <li><a href="faqs.php">FAQ</a></li>
 	            <li><a href="guidelines.php">Guidelines</a></li>
 	            <li class="current"><a href="map.php">Map</a></li>
-	            <li><a href="portner.html">Porter Assistance</a></li>
 	          </ul>
 	        </nav>
 	      </div>

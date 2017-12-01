@@ -25,7 +25,6 @@
             <li><a href="faqs.php">FAQ</a></li>
             <li><a href="guidelines.php">Guidelines</a></li>
             <li><a href="map.php">Map</a></li>
-            <li><a href="portner.html">Porter Assistance</a></li>
           </ul>
         </nav>
       </div>
@@ -54,6 +53,7 @@
       </section>
       <section id="boxes">
       <div class="container">
+
         <div class="box">
           <a href="faqs.php"><img src="./images/icons/faqs-large.png">
           <h3>FAQ</h3></a>

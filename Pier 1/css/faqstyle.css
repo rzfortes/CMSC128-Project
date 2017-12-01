@@ -202,10 +202,10 @@ header li{
     transition: opacity 0.2s;
   }
   .cd-faq-categories .selected {
-    background: #42464b !important;
+    background: #4Daacc !important;
   }
   .cd-faq-categories .selected::before {
-    opacity: 1;
+    opacity: 0;
   }
   .cd-faq-categories.is-fixed {
     /* top and left value assigned in jQuery */
@@ -369,7 +369,7 @@ header li{
     display: block;
   }
   .cd-faq-group > li {
-    background: #ffffff;
+    background: #dcdcdd;
     margin-bottom: 6px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     -webkit-transition: box-shadow 0.2s;
