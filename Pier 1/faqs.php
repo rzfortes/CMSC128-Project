@@ -1,19 +1,27 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+
     <meta charset="utf-8">
+    <!-- refreshes the page every 30 seconds to keep the announcements updated -->
+    <meta http-equiv="refresh" content="30" /> 
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Passenger Assistance System">
-      <meta name="keywords" content="PAS,CPA, Cebu,Pier Map,Port FAQ,Pier FAQ">
-    <title>Passenger Assistance System | Welcome</title>
+    <meta name="keywords" content="PAS,CPA, Cebu,Pier Map,Port FAQ,Pier FAQ">
+
+    <title>FAQs</title>
     
+    <!-- Link references for the CSS usage -->
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/faqstyle.css">
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    <!-- FONT -->
+    
+    <!-- Link references for the FONT -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Time and date data here -->
     <script type="text/javascript" src="js/time.js"></script>
   </head>
   <body>
@@ -33,6 +41,7 @@
         </nav>
       </div>
     </header>
+
      <section id="marquee">
          <p id="clockbox" class="FAQclock"></p>
          <div class="FAQannouncements">
@@ -57,7 +66,9 @@
  <br></br> 
  <br></br>       
 
+<!-- FAQs STARTS HERE -->
 <section class="cd-faq">
+    <!-- Shows the category box at the left s-->
     <ul class="cd-faq-categories">
         <li><img src="images\icons\faqssmall.png"><a class="selected" href="#basics">General Information</a></li>
         <li><a href="#Porter">Porter</a></li>
@@ -65,6 +76,7 @@
         <li><a href="#payments">Payments</a></li>
     </ul> <!-- cd-faq-categories -->
 
+    <!-- GENERAL INFO FAQS STARTS HERE -->
     <div class="cd-faq-items">
         <ul id="basics" class="cd-faq-group">
             <li class="cd-faq-title"><h2>General Information</h2></li>
@@ -120,6 +132,7 @@
 
         </ul> <!-- cd-faq-group -->
 
+        <!-- PORTER FAQS STARTS HERE -->
         <ul id="Porter" class="cd-faq-group">
             <li class="cd-faq-title"><h2>Porter</h2></li>
             <li>
@@ -138,6 +151,7 @@
 
         </ul> <!-- cd-faq-group -->
 
+        <!-- TERMINAL FAQS STARTS HERE -->
         <ul id="Terminal" class="cd-faq-group">
             <li class="cd-faq-title"><h2>Terminal</h2></li>
             <li>
@@ -186,6 +200,7 @@
 
         </ul> <!-- cd-faq-group -->
 
+        <!-- PAYMENT FAQS STARTS HERE -->
         <ul id="payments" class="cd-faq-group">
             <li class="cd-faq-title"><h2>Payments</h2></li>
             <li>

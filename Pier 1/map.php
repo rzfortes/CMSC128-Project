@@ -2,14 +2,22 @@
 <html>
 <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
 <head>
+	
+	<!-- refreshes the page every 30 seconds to keep the announcements updated -->
+    <meta http-equiv="refresh" content="30" /> 
+
+    <!-- Link references for CSS usage -->
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/modalstyle.css">
-	<!-- FONT -->
+	
+	<!-- Link references for the FONT -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script type="text/javascript" src="js/time.js"></script>
+
 	<title>Map</title>
+
 </head>
 <body>
 <!-- Background div-->
@@ -29,6 +37,8 @@
 	        </nav>
 	      </div>
 	    </header>
+
+	    <!-- shows the marquee -->
 	    <section id="marquee">
          <p id="clockbox" class="clock"></p>
          <div class="announcements">
@@ -50,34 +60,21 @@
             ?>
          </marquee>
          </div>
-		<!--img src="images/bg2.png" alt="Background" style="max-width: 100%; max-height: 100%;" class="bg2"-->
 	</div>
 	
-	<!-- Button containers for Pier 1 and 3-->
-	<!-- <div class="container">
+	<!-- modal properties of the map is here -->
+	 <div class="container">
 	  <div class="interior">
-	    <a class="btn" href="#open-modal">Show Pier 1 Map</a>
-	    <a class="btn" href="#open-modal3">Show Pier 3 Map</a>
+	    <a href="#open-modal"><img src="./images/go.png"></a>
 	  </div>
-	</div> -->
-	<!-- Pier 1 Modal content-->
-	<!-- <div id="open-modal" class="modal-window">
+	</div> 
+
+	 <div id="open-modal" class="modal-window">
 	   <div>
-		    <a href="#modal-close" title="Close" class="modal-close">Close Pier 1 Map</a>
-	    	<div class = "modal-content"><embed src=".\images\Pier1.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
+		    <a href="#modal-close"><img src="./images/exit.png"></a>
+	    	<div class = "#flash-content"><embed src=".\images\Pier1.swf" width="100%" height="85%" SCALE="default" wmode="transparent"  /></div>
 	  </div>
-	</div> -->
-	<!-- Pier 3 Modal content-->
-	<!-- <div id="open-modal3" class="modal-window">
-	  <div>
-		    <a href="#modal-close" title="Close" class="modal-close">Close Pier 3 Map</a>
-		    
-	    	<div class = "modal-content"><embed src=".\images\Pier3.swf" width="100%" height="100%" SCALE="default" wmode="transparent"  /></div>
-	  </div>
-	</div> -->
-	<embed src=".\images\Pier1.swf" quality="high" bgcolor="#4DAACC" width="1024" height="576" name="intro" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
-	<!-- <p> Emergency hotline: 415-5169</p> -->
-	<!-- <footer class="foot">
-    </footer> -->
+	</div>
+	
 </body>
 </html>

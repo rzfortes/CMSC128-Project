@@ -2,16 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- refreshes the page every 30 seconds to keep the announcements updated -->
+    <meta http-equiv="refresh" content="30" />
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Passenger Assistance System">
     <meta name="keywords" content="PAS,CPA, Cebu,Pier Map,Port FAQ,Pier FAQ">
+
     <title>Passenger Assistance System | Welcome</title>
+
+    <!-- Link reference for CSS usage -->
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- FONT -->
+    <link rel="stylesheet" href="./css/modalstyle.css">
+    
+    <!-- Link reference for the FONT -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- time and date data -->
     <script type="text/javascript" src="js/time.js"></script>
+
   </head>
   <body>
     <header>
@@ -29,6 +39,8 @@
         </nav>
       </div>
     </header>
+
+    <!-- shows marquee -->
       <section id="marquee">
          <p id="clockbox" class="clock"></p>
          <div class="announcements">
@@ -69,14 +81,22 @@
           <h3>Map</h3></a>
           <p>Looking for your assigned Gate? or the nearest Cafeteria? For detailed steps to certain key locations, click here.</p>
         </div>
-        <!-- <div class="box">
-          <a href="portner.html"><img src="./images/icons/porter-large.png">
-          <h3>   Porter Assistance</h3></a>
-          <p>Need help with your luggage? Say no more! Our friendly porters are here to help.</p>
-        </div> -->
+        
       </div>
     </section>
-    <p id="hotline"> Emergency hotline: 415-5169</p>
+
+    <!-- Modal properties of emergency hotlines here -->
+     <div class="interior">
+      <a href="#open-modal"><img src="./images/em.png"></a>
+    </div>
+  </div> 
+   <div id="open-modal" class="modal-window">
+     <div>
+        <a href="#modal-close"><img src="./images/exit.png"></a>
+        <div class = "#flash-content"><embed src=".\images\emerhot.png" width="75%" height="85%" SCALE="default" wmode="transparent"  /></div>
+    </div>
+
+    <!-- shows the wave design at the bottom of the webpage -->
     <footer class="foot">
     </footer>
   </body>

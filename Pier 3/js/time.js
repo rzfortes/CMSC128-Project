@@ -14,7 +14,7 @@ else if(nhour>12){ap=" PM";nhour-=12;}
 if(nmin<=9) nmin="0"+nmin;
 if(nsec<=9) nsec="0"+nsec;
 
-document.getElementById('clockbox').innerHTML="Pier 1" + "<br>"+tmonth[nmonth]+" "+ndate+", "+nyear+"<br>"+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML="&emsp;&ensp;Pier 1" + "<br>&emsp;&ensp;"+tmonth[nmonth]+" "+ndate+", "+nyear+"<br>&emsp;&ensp;"+nhour+":"+nmin+":"+nsec+ap+"";
 }
 
 window.onload=function(){

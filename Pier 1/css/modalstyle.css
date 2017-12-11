@@ -91,6 +91,12 @@ pointer-events: auto;
   margin: 0 0 0px;
 }
 
+#emercontent {
+  height: 60%;
+  background: transparent;
+  margin: 0 0 0px;
+}
+
 .modal-close {
     /*
 color: #FFFFFF;
@@ -101,19 +107,7 @@ color: #FFFFFF;
   width: 70px;
   text-decoration: none;
     */
-   padding: 20px;
-  position: relative;
-    background-color: #337AB7;
-    border: all;
-    font-size: 100%;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    /*overflow: hidden;*/
-    cursor: pointer;
+
 }
 
 .modal-close:hover {
